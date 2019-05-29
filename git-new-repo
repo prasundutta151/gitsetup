@@ -18,6 +18,7 @@ echo "Press enter when you are done with that"
 
 read -p "Press [Enter] key to continue when done..."
 
+git remote rm origin
 git remote add origin https://github.com/prasundutta151/${reponame}.git
 echo $reponame.git
 git push -u origin master
