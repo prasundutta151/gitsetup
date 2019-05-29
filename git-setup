@@ -2,7 +2,7 @@ echo
 echo "READ following to set up git"
 echo
 echo "====================================================================="
-more "~/.local/bin/git-setup.txt"
+more ~/.local/bin/git-setup.txt
 echo
 echo "====================================================================="
 echo
