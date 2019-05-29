@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ "$#" -eq "0" ]
+  then
+    echo "USAGE: git-update-repo <repo name>"
+    exit 1
+fi
+
+reponame=$1
+
+git add $reponame
+git commit -m "this commit"
+git push

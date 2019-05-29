@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ "$#" -eq "0" ]
+  then
+    echo "USAGE: git-clone-repo <repo name>"
+    exit 1
+fi
+
+reponame=$1
+
+git clone git@github.com:prasundutta151/${reponame}.git

@@ -1,0 +1,22 @@
+#!/bin/bash
+
+if [ "$#" -eq "0" ]
+  then
+    echo "USAGE: git-new-repo <repo name>"
+    exit 1
+fi
+
+reponame=$1
+
+git init
+git add *
+git commit -m "New Repo"
+
+echo "Now you have to go to github and"
+echo "create a new repo with the same name of this folder"
+echo "Press enter when you are done with that"
+
+read -p "Press [Enter] key to continue when done..."
+
+git remote add origin git@github.com:prasundutta/$reponame
+git push -u origin master

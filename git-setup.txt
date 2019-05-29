@@ -1,0 +1,21 @@
+To set up git, use the followings:
+
+1. Download all files to the directory ~/.local/bin and make then executable
+
+2. Setting up ssh, to be done from .ssh directory
+
+   (i)	   ssh-keygen -t rsa -b 4096 -C "[your github's email]"
+   (ii)    ssh-add ~/.ssh/id_rsa
+   (iii)   copy and add the above to github ssh-key
+
+3. Setting up user name and password
+
+   (i) 	   git config --global user.email "pdutta.phy@itbhu.ac.in"
+   (ii)	   git config --global user.name "prasundutta151"
+
+4. useful commands:
+
+   git-clone-repo <repo name>		: To clone from github
+   git-update-repo <repo name> 		: To update to repo
+   git pull	    	 		: Update local repo with git
+   git-new-repo				: Create a new repo    
